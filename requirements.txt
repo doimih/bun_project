@@ -1,0 +1,84 @@
+# Project Requirements and Dependencies
+# This is a Bun/TypeScript project - actual dependencies are managed in package.json
+
+## Runtime Environment
+- Bun runtime (latest version recommended)
+- Node.js compatible environment
+
+## Core Dependencies (Production)
+
+### Backend Framework
+- elysia@^1.4.21                    # Fast and lightweight web framework for Bun
+- @elysiajs/swagger@^1.3.1          # API documentation and Swagger UI
+
+### Database
+- @prisma/client@^7.2.0             # Prisma ORM client
+- @prisma/adapter-mariadb@^7.2.0    # MariaDB adapter for Prisma
+- Database: MariaDB/MySQL
+
+### Authentication & Security
+- bcryptjs@^3.0.3                   # Password hashing
+- jsonwebtoken@^9.0.3               # JWT token generation and validation
+
+### Frontend
+- react@^19                         # React library
+- react-dom@^19                     # React DOM rendering
+- tailwindcss@^4.1.11               # Utility-first CSS framework
+- bun-plugin-tailwind@^0.1.2        # Tailwind integration for Bun
+
+### Utilities
+- dotenv@^17.2.3                    # Environment variable management
+- zod@^4.3.5                        # Schema validation and type safety
+
+## Development Dependencies
+- @types/bun@latest                 # TypeScript definitions for Bun
+- @types/jsonwebtoken@^9.0.10       # TypeScript definitions for JWT
+- @types/react@^19                  # TypeScript definitions for React
+- @types/react-dom@^19              # TypeScript definitions for React DOM
+- prisma@^7.2.0                     # Prisma CLI and schema management
+
+## Functionality Overview
+
+### Authentication System
+- User registration with password hashing
+- User login with JWT token generation
+- JWT-based authentication middleware
+- Protected route access control
+
+### User Management
+- User CRUD operations
+- User profile management
+- Database persistence with Prisma ORM
+
+### API Features
+- RESTful API endpoints
+- Swagger documentation (available at /swagger)
+- Request validation with Zod schemas
+- Error handling middleware
+- Request logging middleware
+
+### Frontend
+- React-based UI
+- API testing interface
+- TailwindCSS styling
+- Hot module reloading in development
+
+### Database
+- Prisma ORM for database operations
+- MariaDB/MySQL database support
+- Database migrations management
+- Schema definition and type safety
+
+## Installation
+Run: bun install
+
+## Scripts
+- bun dev          # Start development server with hot reload
+- bun start        # Start production server
+- bun run build    # Build project
+
+## Configuration Files
+- .env             # Environment variables (create from example)
+- tsconfig.json    # TypeScript configuration
+- bunfig.toml      # Bun configuration
+- prisma/schema.prisma  # Database schema
