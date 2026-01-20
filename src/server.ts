@@ -2,8 +2,8 @@ import { Elysia } from "elysia";
 import swagger from "@elysiajs/swagger";
 import { join } from "path";
 
-import authRoutes from "./routes/auth";
-import usersRoutes from "./routes/users";
+import authRoutes from "./routes/auth.ts";
+import usersRoutes from "./routes/users.ts";
 
 const app = new Elysia()
   .use(
