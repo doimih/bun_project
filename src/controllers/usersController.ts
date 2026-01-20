@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { Request, Response } from "express";
 import { CreateUserDto } from "../dto/user.dto";
 import { createUser, listUsers } from "../services/usersService";
-import { password } from "bun";
+
 
 export const getUsers = async () => {
   return await listUsers();
